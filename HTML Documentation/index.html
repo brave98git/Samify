@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technical Documentation Of HTML</title>
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carter+One&family=Libre+Baskerville:ital,wght@0,700;1,400&family=WDXL+Lubrifont+TC&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav id="navbar">
+      <header>HTML Basics</header>
+      <a class="nav-link" href="#Introduction">Introduction</a>
+      <a class="nav-link" href="#HTML_Elements">HTML Elements</a>
+      <a class="nav-link" href="#Attributes">Attributes</a>
+      <a class="nav-link" href="#Forms">Forms</a>
+      <a class="nav-link" href="#Semantic_HTML">Semantic HTML</a>
+    </nav>
+
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <p>HTML stands for HyperText Markup Language.</p>
+        <p>It is the standard language for creating web pages.</p>
+        <p>HTML describes the structure of a web page.</p>
+        <p>It uses elements to define content.</p>
+        <p>Elements are represented by tags.</p>
+        <code>&lt;html&gt;...&lt;/html&gt;</code>
+        <code>&lt;body&gt;...&lt;/body&gt;</code>
+        <ul>
+          <li>Basic syntax</li>
+          <li>Document structure</li>
+          <li>HTML versions</li>
+        </ul>
+        <p>HTML Boiler Plate:</p>
+        <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8" /&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+  &lt;meta http-equiv="X-UA-Compatible" content="IE=edge" /&gt;
+  &lt;title&gt;Document&lt;/title&gt;
+  &lt;link rel="stylesheet" href="style.css" /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Hello, world!&lt;/h1&gt;
+  &lt;script src="script.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+  </code></pre>
+      </section>
+
+      <section class="main-section" id="HTML_Elements">
+        <header>HTML Elements</header>
+        <p>An HTML element is everything from the start tag to the end tag.</p>
+        <p>Some elements are empty and do not have an end tag.</p>
+        <code>&lt;p&gt;This is a paragraph&lt;/p&gt;</code>
+        <ul>
+          <li>Heading elements</li>
+          <li>Paragraph elements</li>
+          <li>List elements</li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="Attributes">
+        <header>Attributes</header>
+        <p>HTML attributes provide additional information about elements.</p>
+        <p>Attributes are always specified in the start tag.</p>
+        <p>Attributes usually come in name/value pairs.</p>
+        <code>&lt;a href="https://example.com"&gt;Visit&lt;/a&gt;</code>
+        <ul>
+          <li>href</li>
+          <li>src</li>
+          <li>alt</li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="Forms">
+        <header>Forms</header>
+        <p>HTML forms are used to collect user input.</p>
+        <p>Form elements include input, textarea, button, etc.</p>
+        <p>Each form element has specific attributes.</p>
+        <code
+          >&lt;form&gt;&lt;input type="text" name="name"
+          /&gt;&lt;/form&gt;</code
+        >
+        <ul>
+          <li>Text input</li>
+          <li>Checkbox</li>
+          <li>Radio button</li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="Semantic_HTML">
+        <header>Semantic HTML</header>
+        <p>Semantic HTML introduces meaning to the web page.</p>
+        <p>
+          Examples include &lt;article&gt;, &lt;section&gt;, &lt;nav&gt;, and
+          &lt;aside&gt;.
+        </p>
+        <p>Improves accessibility and SEO.</p>
+        <code>&lt;section&gt;...&lt;/section&gt;</code>
+        <ul>
+          <li>section</li>
+          <li>article</li>
+          <li>footer</li>
+        </ul>
+      </section>
+
+      <footer>
+        <p>Created by [Samarth Pawar]</p>
+        <p>Last updated: [May 2025]</p>
+        <p>For more information, visit the <a href="https://www.w3.org/">W3C</a>.</p>
+        <p>More will be added soon.</p>
+      </footer>
+    </main>
+  </body>
+</html>

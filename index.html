@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SamiFy – HTML, CSS, Bootstrap & JS Cheatsheets & Roadmaps</title>
+    <link rel="icon" href="./assets/faviconico.png" type="image/svg+xml" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img src="./assets/nav.svg" alt="logo" id="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <button
+                class="nav-link active btn no-hover"
+                data-bs-toggle="modal"
+                data-bs-target="#aboutModal"
+              >
+                About
+              </button>
+            </li>
+
+            <div
+              class="modal fade"
+              id="aboutModal"
+              tabindex="-1"
+              aria-labelledby="aboutModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-sm">
+                <!-- modal-sm makes it small like a pamphlet -->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="aboutModalLabel">About Me</h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>
+                      Hello! I’m <strong>Samarth</strong>, a passionate student
+                      and aspiring web developer.
+                    </p>
+                    <p>
+                      I created <strong>SamiFy</strong> to share useful
+                      resources, cheat sheets, and roadmaps for HTML, CSS,
+                      Bootstrap, and JavaScript. Dive in, explore my work, and
+                      feel free to connect with me!
+                      I learned a lot from FreeCodeCamp and CodeWithHarry, and I
+                      hope this site helps you too in your web development
+                      journey. Clcik the button below to visit FreeCodeCamp's
+                      Responsive Web Design course, which inspired this project.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.freecodecamp.org/learn/2022/responsive-web-design/">Visit</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Watch New Releases
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./HTML Documentation/index.html"
+                    >HTML Documentation</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="#">CSS Documentation(Coming Soon...)</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Bootstrap Documentation(Coming Soon...)</a>
+                </li>
+                <li><a class="dropdown-item" href="#">JS Documentation(Coming Soon...)</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here(Coming Soon...)</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search for Content"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" id="btnsub" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-5">
+      <h1 class="text-center mb-4 samify-title">Welcome to SamiFy</h1>
+
+      <div class="row justify-content-center g-4 samify-cards">
+        <!-- HTML Card -->
+        <div class="card samify-card d-flex flex-row align-items-center">
+          <div class="card-body text-start">
+            <h5 class="card-title">HTML Cheatsheet</h5>
+            <p class="card-text">
+              Explore essential tags, structure, and templates for building
+              pages.
+            </p>
+            <a id="html-link"
+              href="https://www.codewithharry.com/blogpost/html-cheatsheet"
+              class="btn samify-btn"
+              >Learn HTML</a
+            >
+          </div>
+          <img
+            src="./assets/HTML.png"
+            alt="HTML Logo"
+            class="samify-img ms-auto"
+          />
+        </div>
+
+        <!-- CSS Card -->
+        <div class="card samify-card d-flex flex-row align-items-center">
+          <div class="card-body text-start">
+            <h5 class="card-title">CSS Tricks</h5>
+            <p class="card-text">
+              Master layouts, animations, and styling with quick CSS hacks.
+            </p>
+            <a  id="css-link"
+            href="https://css-tricks.com/" class="btn samify-btn"
+              >Explore CSS</a
+            >
+          </div>
+          <img
+            src="./assets/CSS.png"
+            alt="CSS Logo"
+            class="samify-img ms-auto"
+          />
+        </div>
+
+        <!-- Bootstrap Card -->
+        <div class="card samify-card d-flex flex-row align-items-center">
+          <div class="card-body text-start">
+            <h5 class="card-title">Bootstrap Shortcuts</h5>
+            <p class="card-text">
+              Fast-track designs using responsive and reusable components.
+            </p>
+            <a id="bootstrap-link"
+              href="https://getbootstrap.com/docs/5.3/getting-started/introduction/"
+              class="btn samify-btn"
+              >Use Bootstrap</a
+            >
+          </div>
+          <img
+            src="./assets/bootstrap.jpeg"
+            alt="Bootstrap Logo"
+            class="samify-img ms-auto"
+          />
+        </div>
+
+        <!-- JS Card -->
+        <div class="card samify-card d-flex flex-row align-items-center">
+          <div class="card-body text-start">
+            <h5 class="card-title">JavaScript Roadmap</h5>
+            <p class="card-text">
+              Understand logic and DOM with fun and simple JS tricks.
+            </p>
+            <a id="js-link" href="https://roadmap.sh/javascript" class="btn samify-btn"
+              >Start JS</a
+            >
+          </div>
+          <img src="./assets/JS.png" alt="JS Logo" class="samify-img ms-auto" />
+        </div>
+      </div>
+    </div>
+
+    <div class="Learn">
+      <h1>Why To Learn Web Development?</h1>
+      <img src="./assets/together.png" class="img-fluid" alt="..." />
+
+      <p>
+        Web development is a crucial skill in today's digital world. It allows
+        you to create and maintain websites, applications, and online platforms
+        that are essential for businesses, education, and personal expression.
+        By learning web development, you can unlock opportunities in various
+        fields, enhance your problem-solving skills, and contribute to the
+        ever-evolving internet landscape.
+      </p>
+    </div>
+
+    <div class="whyt">
+      <h2 class="text-center mt-5">Why Choose SamiFy?</h2>
+      <p class="text-center">
+        SamiFy is your go-to resource for mastering web development essentials.
+        Whether you're a beginner or an experienced developer, our curated
+        cheatsheets and roadmaps will help you level up your skills quickly and
+        effectively.
+      </p>
+    </div>
+
+    <footer
+      class="d-flex flex-wrap justify-content-between align-items-center py-4 my-4 border-top bg-light"
+    >
+      <!-- Copyright -->
+      <p class="col-md-4 mb-0 text-muted ms-3">
+        © 2025 <strong>SamiFy</strong>, Inc. All rights reserved.
+      </p>
+
+      <!-- Logo (Optional) -->
+      <a
+        href="/"
+        class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 link-dark text-decoration-none"
+        aria-label="SamiFy Home"
+      >
+        <img
+          src="./assets/faviconico.png"
+          alt="SamiFy Logo"
+          width="40"
+          height="40"
+          class="me-2"
+        />
+        <span class="fs-5 fw-bold">SamiFy</span>
+      </a>
+
+      <!-- Navigation Links -->
+      <ul class="nav col-md-4 justify-content-end me-3">
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-muted">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-muted">CheatSheets</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-muted">Roadmaps</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-muted">Tips & Tricks</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-muted">About</a>
+        </li>
+      </ul>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
